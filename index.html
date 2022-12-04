@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="./sass/main.css">
+    </head>
+    <body class="body d-flex flex-column">
+        <header class="header">
+            <div class="header__logo container-fluid">
+                <h1 class="text-center">GOAT</h1>
+            </div>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="./index.html">Home</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/populares.html">Tendencia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/seleccion.html">Seleccion</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/camisetas.html">Camisetas</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </header>
+
+        <main class="main d-flex flex-column">
+            <section class="portada position-relative">
+                <div class="portada__img position-relative">
+                    <img src="./img/imgdd.jpg" class="img-fluid">
+                    <div class="portada__txt position-absolute d-flex flex-column">
+                        <p class="fw-bold">MUNDIAL QATAR 2022</p>
+                        <p>Vestite para el carnaval</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section d-flex flex-column">
+                <div class="section__1 container-fluid">
+                    <div class="row">
+                        <div class="section__1__seleccion col-lg-6 col-sm-12 col-md-12"> 
+                            <h3 class="text-center">CAMISETAS</h3>                           
+                            <div class="section__1__seleccion__img position-relative overh">
+                                <img src="./img/haland.jpg" class="img-fluid imganim">
+                                <div class="section__1__seleccion__boton position-absolute">
+                                    <a href="#"><p>Ver Mas</p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__1__cam col-lg-6 col-sm-12 col-md-12">
+                            <h3 class="text-center">SELECCION</h3>
+                            <div class="section__1__cam__img position-relative overh">
+                                <img src="./img/mesii1.jpg" class="img-fluid imganim">
+                                <!--<div class="section__1__cam__boton position-absolute">
+                                    <p>Ver Mas</p>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__2">
+                    <div class="section__2__gal container-fluid">
+                        <div class="row">
+                            <div class="section__2__title col-12 text-center">
+                            <h3>POPULARES</h3>
+                            </div>
+                            <div class="col-lg-3 col-sm-12 col-md-6 animborder">
+                                <a href="#">
+                                    <div class="overh">
+                                        <img src="./img/imgcam2.png" class="img-fluid imganim">
+                                    </div>
+                                </a>
+                                <div class="text-center">
+                                    <p>Camiseta Alternativa Azul Boca Juniors 22
+                                    </p>
+                                    <p>$14000</p>       
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-12 col-md-6 animborder">
+                                <a href="#">
+                                    <div class="overh">
+                                        <img src="./img/imgcam.jpg" class="img-fluid imganim">
+                                    </div>
+                                </a>
+                                <div class="text-center">
+                                    <p>Camiseta Alternativa Argentina 22
+                                    </p>
+                                    <span>$16000</span>       
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-12 col-md-6 animborder">
+                                <a href="#">
+                                    <div class="overh">
+                                        <img src="./img/imgcam3.jpg" class="img-fluid imganim">
+                                    </div>
+                                </a>
+                                <div class="text-center">
+                                    <p>Camiseta Entrenamiento Argentina 22
+                                    </p>
+                                    <span>$14000</span>       
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-12 col-md-6 animborder">
+                                <a href="#">
+                                    <div class="overh">
+                                        <img src="./img/imgcam4.png" class="img-fluid imganim">
+                                    </div>
+                                    </a>
+                                <div class="text-center">
+                                    <p>Camiseta Francia 22 
+                                    </p>       
+                                    <p>$13000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section__ctacto">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12">
+                            <h2>CONTACTO</h2>
+                            <p>Si querés conocer nuestros productos, 
+                                podés comprar desde nuestra tienda online o acercarte a nuestro local comercial para conocerlos personalmente. 
+                                Podés pagar en efectivo, con tarjeta de crédito o transferencia. 
+                                Envíos a domicilio en 24 horas.</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <p>Direccion: </p>
+                            <p>Telefono: (011) 1167145412</p>
+                            <p>Mail: @gmail.com</p>
+                            <p>Horarios: Lunes a Viernes 10:30-19:00
+                                Sábados 11:00-16:00</p> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="text-center"><p>dskldsjdfskkfsd</p></footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+</html>

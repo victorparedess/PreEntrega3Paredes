@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.imganim {
+    position: relative;
+    transition: all 300ms;
+}
+.overh {
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.header {
+    background-color: cadetblue;
+}
+.portada__txt {
+    top: 30%;
+    left: 5%;
+}
+.main {
+    gap: 50px;
+}
+.section {
+    gap: 50px;
+}
+.section__1__seleccion__boton {
+    top: 70%;
+    left: 42%;
+    p {
+        border: solid 2px white;
+        font-size: 1.4rem;
+        padding: 2px 25px;
+        background-color: black;
+        color: white;
+    }
+}
+.section__ctacto {
+    background-color: darkgoldenrod;
+}
+.imganim:hover {
+    transform: scale(1.1);
+}
+.animborder {
+    transition: all 400ms;
+}
+.animborder:hover {
+    border: 1px solid black;
+}
+/* @media screen and (max-width: 767px) {
+    p {
+        font-size: 50%;
+    }
+    
+} */
