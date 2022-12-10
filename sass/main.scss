@@ -1,11 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* IMPORTS*/
+@import "./partials/reset";
+@import "./partials/vars";
 .imganim {
     position: relative;
-    transition: all 300ms;
+    transition: all 400ms;
 }
 .overh {
     overflow: hidden;
@@ -14,45 +12,78 @@ a {
     text-decoration: none;
     color: black;
 }
-.header {
-    background-color: cadetblue;
-}
-.portada__txt {
-    top: 30%;
-    left: 5%;
-}
+.homebody {
+    background: linear-gradient(45deg, #ccd4dd, #f2eee7);
+    h1, h2{
+        font-family: 'Oswald', sans-serif;
+    }
+    h3, p {
+        font-family: 'Roboto', sans-serif;
+    }
+    span {
+        font-family: 'Oswald', sans-serif;
+    }
+} 
 .main {
     gap: 50px;
+}
+.portada__txt {
+    top: 40%;
 }
 .section {
     gap: 50px;
 }
 .section__1__seleccion__boton {
     top: 70%;
-    left: 42%;
-    p {
-        border: solid 2px white;
-        font-size: 1.4rem;
-        padding: 2px 25px;
+    right: 40%;
+    a {
+        border: solid 1px white;
         background-color: black;
         color: white;
+        padding: 10px;
+        transition: all 300ms;
+        &:hover {
+            color: lightslategray;
+        }
     }
 }
 .section__ctacto {
-    background-color: darkgoldenrod;
+    background-color: black;
+    color: lightslategray;
 }
 .imganim:hover {
     transform: scale(1.1);
 }
 .animborder {
-    transition: all 400ms;
+    transition: all 300ms;
 }
 .animborder:hover {
     border: 1px solid black;
 }
-/* @media screen and (max-width: 767px) {
-    p {
-        font-size: 50%;
+.margenprueba {
+    margin-bottom: 30px;
+}
+footer {
+    background-color: black;
+}
+
+/* Page Camisetas */
+.camisetas__body {
+    @extend .homebody;
+}
+.Camisetas__port {
+    margin-bottom: 30px;
+    &__txt {
+        @include portadatxtcaja (40%, 1.2rem);
     }
-    
-} */
+}
+/*Page Seleccion*/
+.seleccion__body {
+    @extend .homebody;
+}
+.seleccion__port {
+    margin-bottom: 30px;
+    &__txt {
+        @include portadatxtcaja (40%, 1.2rem);
+    }
+}

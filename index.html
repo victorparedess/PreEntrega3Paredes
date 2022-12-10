@@ -2,16 +2,23 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="keywords" content="tienda, camisetas, seleccion, mundial">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
+        <title>Inicio</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="stylesheet" href="./sass/main.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Faustina:ital,wght@0,600;1,500&family=Oswald:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
-    <body class="body d-flex flex-column">
+    
+    <body class="homebody d-flex flex-column">
         <header class="header">
             <div class="header__logo container-fluid">
-                <h1 class="text-center">GOAT</h1>
+                <h1 class="text-center">SPORTIF</h1>
             </div>
             <nav class="navbar navbar-expand-lg bg-light">
                 <div class="container-fluid">
@@ -22,13 +29,13 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./pages/populares.html">Tendencia</a>
+                        <a class="nav-link active" href="./pages/seleccion.html">Seleccion</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="./pages/seleccion.html">Seleccion</a>
+                        <a class="nav-link active" href="./pages/camisetas.html">Camisetas</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="./pages/camisetas.html">Camisetas</a>
+                        <a class="nav-link active" href="./pages/formulario.html">Vende Tu Camiseta</a>
                       </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -41,90 +48,103 @@
         </header>
 
         <main class="main d-flex flex-column">
-            <section class="portada position-relative">
+            <section class="portada">
                 <div class="portada__img position-relative">
                     <img src="./img/imgdd.jpg" class="img-fluid">
-                    <div class="portada__txt position-absolute d-flex flex-column">
-                        <p class="fw-bold">MUNDIAL QATAR 2022</p>
-                        <p>Vestite para el carnaval</p>
+                    <div class="portada__txt text-white container-fluid position-absolute">
+                        <h2>MUNDIAL QATAR 2022</h2>
+                        <p><strong>Las camisetas de fútbol que usan tus ídolos</strong>
+                        </p>
                     </div>
                 </div>
             </section>
             <section class="section d-flex flex-column">
-                <div class="section__1 container-fluid">
+                <div class="section__1 container-fluid text-center">
                     <div class="row">
                         <div class="section__1__seleccion col-lg-6 col-sm-12 col-md-12"> 
-                            <h3 class="text-center">CAMISETAS</h3>                           
+                            <h3>CAMISETAS</h3>                           
                             <div class="section__1__seleccion__img position-relative overh">
-                                <img src="./img/haland.jpg" class="img-fluid imganim">
+                                <img src="./img/imgsectioncamiseta.jpg" class="img-fluid imganim">
                                 <div class="section__1__seleccion__boton position-absolute">
-                                    <a href="#"><p>Ver Mas</p></a>
+                                    <a href="./pages/camisetas.html">
+                                        <span>CONOCER MAS</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div class="section__1__cam col-lg-6 col-sm-12 col-md-12">
                             <h3 class="text-center">SELECCION</h3>
                             <div class="section__1__cam__img position-relative overh">
-                                <img src="./img/mesii1.jpg" class="img-fluid imganim">
-                                <!--<div class="section__1__cam__boton position-absolute">
-                                    <p>Ver Mas</p>
-                                </div>-->
+                                <img src="./img/imgselecc.jpg" class="img-fluid imganim">
+                                <div class="section__1__cam__boton position-absolute section__1__seleccion__boton">
+                                    <a href="./pages/seleccion.html">
+                                        <span>CONOCER MAS</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="section__2">
-                    <div class="section__2__gal container-fluid">
+                    <div class="section__2__gal container-fluid text-center">
                         <div class="row">
                             <div class="section__2__title col-12 text-center">
                             <h3>POPULARES</h3>
                             </div>
-                            <div class="col-lg-3 col-sm-12 col-md-6 animborder">
-                                <a href="#">
+                            <div class="col-lg-3 col-sm-12 col-md-6">
+                                <div class="animborder">
                                     <div class="overh">
-                                        <img src="./img/imgcam2.png" class="img-fluid imganim">
+                                        <a href="#">
+                                            <img src="./img/imgcam.jpg" class="img-fluid imganim">
+                                        </a>
                                     </div>
-                                </a>
-                                <div class="text-center">
-                                    <p>Camiseta Alternativa Azul Boca Juniors 22
-                                    </p>
-                                    <p>$14000</p>       
+                                    <div class="text-center">
+                                        <p>Camiseta (Jugador) Suplente Argentina 2022
+                                        </p>
+                                        <span><strong>$14000</strong></span>       
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-12 col-md-6 animborder">
-                                <a href="#">
+                            <div class="col-lg-3 col-sm-12 col-md-6">
+                                <div class="animborder">
                                     <div class="overh">
-                                        <img src="./img/imgcam.jpg" class="img-fluid imganim">
+                                        <a href="#">
+                                            <img src="./img/imgcam2.png" class="img-fluid imganim">
+                                        </a>
                                     </div>
-                                </a>
-                                <div class="text-center">
-                                    <p>Camiseta Alternativa Argentina 22
-                                    </p>
-                                    <span>$16000</span>       
+                                    <div class="text-center">
+                                        <p>Camiseta Alternativa Boca juniors 2022
+                                        </p>
+                                        <span><strong>$14000</strong></span>       
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-12 col-md-6 animborder">
-                                <a href="#">
+                            <div class="col-lg-3 col-sm-12 col-md-6">
+                                <div class="animborder">
                                     <div class="overh">
-                                        <img src="./img/imgcam3.jpg" class="img-fluid imganim">
+                                        <a href="#">
+                                            <img src="./img/imgcam4.png" class="img-fluid imganim">
+                                        </a>
                                     </div>
-                                </a>
-                                <div class="text-center">
-                                    <p>Camiseta Entrenamiento Argentina 22
-                                    </p>
-                                    <span>$14000</span>       
+                                    <div class="text-center">
+                                        <p>Camiseta (Hincha) Titular Francia Qatar 2022
+                                        </p>
+                                        <span><strong>$14000</strong></span>       
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-12 col-md-6 animborder">
-                                <a href="#">
+                            <div class="col-lg-3 col-sm-12 col-md-6">
+                                <div class="animborder">
                                     <div class="overh">
-                                        <img src="./img/imgcam4.png" class="img-fluid imganim">
+                                        <a href="#">
+                                            <img src="./img/imgcam05.jpg" class="img-fluid imganim">
+                                        </a>
                                     </div>
-                                    </a>
-                                <div class="text-center">
-                                    <p>Camiseta Francia 22 
-                                    </p>       
-                                    <p>$13000</p>
+                                    <div class="text-center">
+                                        <p>Camiseta (Jugador) Titular Juventus 2022
+                                        </p>
+                                        <span><strong>$14000</strong></span>       
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -142,9 +162,9 @@
                                 Envíos a domicilio en 24 horas.</p>
                         </div>
                         <div class="col-lg-6 col-sm-12">
-                            <p>Direccion: </p>
+                            <p>Direccion: Av Rivadavia 1721</p>
                             <p>Telefono: (011) 1167145412</p>
-                            <p>Mail: @gmail.com</p>
+                            <p>Mail: sportif@gmail.com</p>
                             <p>Horarios: Lunes a Viernes 10:30-19:00
                                 Sábados 11:00-16:00</p> 
                         </div>
@@ -152,7 +172,9 @@
                 </div>
             </section>
         </main>
-        <footer class="text-center"><p>dskldsjdfskkfsd</p></footer>
+        <footer class="text-center text-white">
+            <span>Created by SPORTIF 2022</span>
+        </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </body>
 </html>
