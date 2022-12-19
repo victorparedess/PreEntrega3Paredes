@@ -1,29 +1,28 @@
-/* IMPORTS*/
+/* RESET */
 @import "./partials/reset";
+/* VARIABLES */
 @import "./partials/vars";
-.imganim {
-    position: relative;
-    transition: all 400ms;
-}
-.overh {
-    overflow: hidden;
-}
-a {
-    text-decoration: none;
-    color: black;
-}
+/* ANIMACIONES */
+@import "./partials/anim";
+
+/* INDEX */
 .homebody {
-    background: linear-gradient(45deg, #ccd4dd, #f2eee7);
-    h1, h2{
-        font-family: 'Oswald', sans-serif;
-    }
-    h3, p {
-        font-family: 'Roboto', sans-serif;
-    }
-    span {
-        font-family: 'Oswald', sans-serif;
-    }
+    background: $fondocolor;
+    @include headings;
 } 
+.margenimg {
+    margin-bottom: $marimg;
+}
+.header {
+    &__logo {
+        h1 {
+            margin-bottom: 0;
+        }
+    }
+    .navmenu {
+        @include barranav;
+    }
+}
 .main {
     gap: 50px;
 }
@@ -35,7 +34,8 @@ a {
 }
 .section__1__seleccion__boton {
     top: 70%;
-    right: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     a {
         border: solid 1px white;
         background-color: black;
@@ -47,29 +47,28 @@ a {
         }
     }
 }
+.section__2__title {
+    h3 {
+        margin-bottom: 0;
+    }
+}
 .section__ctacto {
     background-color: black;
     color: lightslategray;
-}
-.imganim:hover {
-    transform: scale(1.1);
-}
-.animborder {
-    transition: all 300ms;
-}
-.animborder:hover {
-    border: 1px solid black;
-}
-.margenprueba {
-    margin-bottom: 30px;
 }
 footer {
     background-color: black;
 }
 
-/* Page Camisetas */
+/*    Page Camisetas      */
 .camisetas__body {
-    @extend .homebody;
+    background: $fondocolor;
+    @include headings;
+}
+.camisetas__header {
+    nav {
+        @include barranav;
+    }
 }
 .Camisetas__port {
     margin-bottom: 30px;
@@ -77,13 +76,63 @@ footer {
         @include portadatxtcaja (40%, 1.2rem);
     }
 }
+
 /*Page Seleccion*/
 .seleccion__body {
-    @extend .homebody;
+    background: $fondocolor;
+    @include headings;
+}
+.seleccion__header {
+    nav {
+        @include barranav;
+    }
 }
 .seleccion__port {
     margin-bottom: 30px;
     &__txt {
         @include portadatxtcaja (40%, 1.2rem);
+    }
+}
+
+/* PAGE FORMULARIO*/
+.formulario__body {
+    background: $fondocolor;
+    @include headings;
+}
+.formulario__header {
+    nav {
+        @include barranav;
+    }
+}
+.formulario__main  section{
+    margin-bottom: 30px;
+}
+
+/* PAGE BOTINES */
+.botines__body {
+    background: $fondocolor;
+    @include headings;
+}
+.botines__header {
+    nav {
+        @include barranav;
+    }
+}
+.botines__port {
+    margin-bottom: 30px;
+    &__txt {
+        @include portadatxtcaja (40%, 1.2rem);
+    }
+}
+
+/* MEDIA QUARES */
+@media (max-width: 992px) {
+    .portada__txt {
+        font-size: 80%;
+    }
+    .section__1 {
+        .row {
+            gap: 30px;
+        }
     }
 }

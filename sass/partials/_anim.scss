@@ -1,0 +1,17 @@
+.overh {
+    overflow: hidden;
+}
+.imganim {
+    position: relative;
+    transition: all 400ms;
+  }
+.imganim:hover {
+    transform: scale(1.1);
+}
+.animborder {
+    position: relative;
+    transition: all 300ms;
+}
+.animborder:hover {
+    border: 1px solid black;
+}

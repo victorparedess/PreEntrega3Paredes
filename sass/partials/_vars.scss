@@ -1,3 +1,38 @@
+@mixin headings {
+    h1, h2{
+        font-family: 'Oswald', sans-serif;
+    }
+    h3, p {
+        font-family: 'Roboto', sans-serif;
+    }
+    span {
+        font-family: 'Oswald', sans-serif;
+    }
+}
+@mixin barranav {
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    margin-bottom: 1px;
+    background-color: #1d1716;
+    div {
+        .container-lista {
+            .listanav {
+                li {
+                    a {
+                        transition: all 400ms;
+                        padding: 10px 20px;
+                        &:hover {
+                            background-color: whitesmoke;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+$fondocolor : linear-gradient(45deg, #ccd4dd, #f2eee7);
+$marimg : 25px;
 @mixin portadatxtcaja ($top, $fontsize) {
     top: $top;
     font-size: $fontsize;

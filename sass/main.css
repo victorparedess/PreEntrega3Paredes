@@ -1,17 +1,8 @@
-/* IMPORTS*/
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.imganim {
-  position: relative;
-  transition: all 400ms;
-}
-
-.overh {
-  overflow: hidden;
 }
 
 a {
@@ -19,17 +10,64 @@ a {
   color: black;
 }
 
-.homebody, .seleccion__body, .camisetas__body {
+/* VARIABLES */
+/* ANIMACIONES */
+.overh {
+  overflow: hidden;
+}
+
+.imganim {
+  position: relative;
+  transition: all 400ms;
+}
+
+.imganim:hover {
+  transform: scale(1.1);
+}
+
+.animborder {
+  position: relative;
+  transition: all 300ms;
+}
+
+.animborder:hover {
+  border: 1px solid black;
+}
+
+/* INDEX */
+.homebody {
   background: linear-gradient(45deg, #ccd4dd, #f2eee7);
 }
-.homebody h1, .seleccion__body h1, .camisetas__body h1, .homebody h2, .seleccion__body h2, .camisetas__body h2 {
+.homebody h1, .homebody h2 {
   font-family: "Oswald", sans-serif;
 }
-.homebody h3, .seleccion__body h3, .camisetas__body h3, .homebody p, .seleccion__body p, .camisetas__body p {
+.homebody h3, .homebody p {
   font-family: "Roboto", sans-serif;
 }
-.homebody span, .seleccion__body span, .camisetas__body span {
+.homebody span {
   font-family: "Oswald", sans-serif;
+}
+
+.margenimg {
+  margin-bottom: 25px;
+}
+
+.header__logo h1 {
+  margin-bottom: 0;
+}
+.header .navmenu {
+  font-family: "Oswald", sans-serif;
+  padding: 0;
+  margin-bottom: 1px;
+  background-color: #1d1716;
+}
+.header .navmenu div .container-lista .listanav li a {
+  transition: all 400ms;
+  padding: 10px 20px;
+}
+.header .navmenu div .container-lista .listanav li a:hover {
+  background-color: whitesmoke;
+  color: black;
 }
 
 .main {
@@ -46,7 +84,8 @@ a {
 
 .section__1__seleccion__boton {
   top: 70%;
-  right: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .section__1__seleccion__boton a {
   border: solid 1px white;
@@ -59,32 +98,48 @@ a {
   color: lightslategray;
 }
 
+.section__2__title h3 {
+  margin-bottom: 0;
+}
+
 .section__ctacto {
   background-color: black;
   color: lightslategray;
-}
-
-.imganim:hover {
-  transform: scale(1.1);
-}
-
-.animborder {
-  transition: all 300ms;
-}
-
-.animborder:hover {
-  border: 1px solid black;
-}
-
-.margenprueba {
-  margin-bottom: 30px;
 }
 
 footer {
   background-color: black;
 }
 
-/* Page Camisetas */
+/*    Page Camisetas      */
+.camisetas__body {
+  background: linear-gradient(45deg, #ccd4dd, #f2eee7);
+}
+.camisetas__body h1, .camisetas__body h2 {
+  font-family: "Oswald", sans-serif;
+}
+.camisetas__body h3, .camisetas__body p {
+  font-family: "Roboto", sans-serif;
+}
+.camisetas__body span {
+  font-family: "Oswald", sans-serif;
+}
+
+.camisetas__header nav {
+  font-family: "Oswald", sans-serif;
+  padding: 0;
+  margin-bottom: 1px;
+  background-color: #1d1716;
+}
+.camisetas__header nav div .container-lista .listanav li a {
+  transition: all 400ms;
+  padding: 10px 20px;
+}
+.camisetas__header nav div .container-lista .listanav li a:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
 .Camisetas__port {
   margin-bottom: 30px;
 }
@@ -94,10 +149,118 @@ footer {
 }
 
 /*Page Seleccion*/
+.seleccion__body {
+  background: linear-gradient(45deg, #ccd4dd, #f2eee7);
+}
+.seleccion__body h1, .seleccion__body h2 {
+  font-family: "Oswald", sans-serif;
+}
+.seleccion__body h3, .seleccion__body p {
+  font-family: "Roboto", sans-serif;
+}
+.seleccion__body span {
+  font-family: "Oswald", sans-serif;
+}
+
+.seleccion__header nav {
+  font-family: "Oswald", sans-serif;
+  padding: 0;
+  margin-bottom: 1px;
+  background-color: #1d1716;
+}
+.seleccion__header nav div .container-lista .listanav li a {
+  transition: all 400ms;
+  padding: 10px 20px;
+}
+.seleccion__header nav div .container-lista .listanav li a:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
 .seleccion__port {
   margin-bottom: 30px;
 }
 .seleccion__port__txt {
   top: 40%;
   font-size: 1.2rem;
+}
+
+/* PAGE FORMULARIO*/
+.formulario__body {
+  background: linear-gradient(45deg, #ccd4dd, #f2eee7);
+}
+.formulario__body h1, .formulario__body h2 {
+  font-family: "Oswald", sans-serif;
+}
+.formulario__body h3, .formulario__body p {
+  font-family: "Roboto", sans-serif;
+}
+.formulario__body span {
+  font-family: "Oswald", sans-serif;
+}
+
+.formulario__header nav {
+  font-family: "Oswald", sans-serif;
+  padding: 0;
+  margin-bottom: 1px;
+  background-color: #1d1716;
+}
+.formulario__header nav div .container-lista .listanav li a {
+  transition: all 400ms;
+  padding: 10px 20px;
+}
+.formulario__header nav div .container-lista .listanav li a:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.formulario__main section {
+  margin-bottom: 30px;
+}
+
+/* PAGE BOTINES */
+.botines__body {
+  background: linear-gradient(45deg, #ccd4dd, #f2eee7);
+}
+.botines__body h1, .botines__body h2 {
+  font-family: "Oswald", sans-serif;
+}
+.botines__body h3, .botines__body p {
+  font-family: "Roboto", sans-serif;
+}
+.botines__body span {
+  font-family: "Oswald", sans-serif;
+}
+
+.botines__header nav {
+  font-family: "Oswald", sans-serif;
+  padding: 0;
+  margin-bottom: 1px;
+  background-color: #1d1716;
+}
+.botines__header nav div .container-lista .listanav li a {
+  transition: all 400ms;
+  padding: 10px 20px;
+}
+.botines__header nav div .container-lista .listanav li a:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.botines__port {
+  margin-bottom: 30px;
+}
+.botines__port__txt {
+  top: 40%;
+  font-size: 1.2rem;
+}
+
+/* MEDIA QUARES */
+@media (max-width: 992px) {
+  .portada__txt {
+    font-size: 80%;
+  }
+  .section__1 .row {
+    gap: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */
