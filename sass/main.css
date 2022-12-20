@@ -215,7 +215,7 @@ footer {
 }
 
 .formulario__main section {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 /* PAGE BOTINES */
@@ -257,7 +257,7 @@ footer {
 
 /* MEDIA QUARES */
 @media (max-width: 992px) {
-  .portada__txt {
+  .portada__txt, .botines__port__txt, .Camisetas__port__txt, .seleccion__port__txt {
     font-size: 80%;
   }
   .section__1 .row {
